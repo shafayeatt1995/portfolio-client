@@ -955,20 +955,26 @@ h3.comment-reply-title:after {
   margin-bottom: 15px;
 }
 .client-block {
+  min-height: 100%;
   text-align: center;
   padding: 5px 0;
   margin-bottom: 30px;
-  opacity: 0.4;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+img.tect-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .clients.owl-carousel .owl-item img {
   display: block;
-  width: 100%;
-  max-width: 100px;
+  width: auto;
+  max-width: 175px;
+  height: 130px;
 }
 .testimonials.owl-carousel .owl-nav .owl-prev,
 .testimonials.owl-carousel .owl-nav .owl-next,
@@ -1034,6 +1040,16 @@ h3.comment-reply-title:after {
   border: 2px solid #0099e5;
   background-color: #fff;
 }
+.gk-item {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  background: #edf2f2;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
 .timeline-second-style .right-part {
   width: 70%;
   display: table-cell;
@@ -1044,6 +1060,9 @@ h3.comment-reply-title:after {
 .timeline-second-style .item-title {
   font-size: 16px;
   margin-bottom: 3px;
+}
+a.item-title {
+  font-weight: 600;
 }
 .timeline-second-style .right-part p,
 .timeline-second-style .right-part p > * {
