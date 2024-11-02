@@ -138,14 +138,14 @@
                         </li>
                         <li>
                           <span class="title">Country</span>
-                          <span class="value">New Zealand</span>
+                          <span class="value">Bangladesh</span>
                         </li>
                         <li>
                           <span class="title">Address</span>
-                          <span class="value">99A Woodlands Park Road, Titirangi, Auckland</span>
+                          <span class="value">Dhaka</span>
                         </li>
                         <li>
-                          <span class="title">e-mail</span>
+                          <span class="title">E-mail</span>
                           <span class="value"></span>
                             <a href="mailto:shafayetalanik@gmail.com">
                               shafayetalanik@gmail.com
@@ -579,7 +579,7 @@
                         <div class="timeline timeline-second-style clearfix">
                           <div class="timeline-item clearfix">
                             <div class="left-part">
-                              <h5 class="item-period">Jul 2023 - Mar 2024</h5>
+                              <h5 class="item-period">Jul 2023 - Oct 2024</h5>
                               <span class="item-company"></span>
                             </div>
                             <div class="divider"></div>
@@ -592,7 +592,7 @@
                           </div>
                           <div class="timeline-item clearfix">
                             <div class="left-part">
-                              <h5 class="item-period">Dec 2021 - Mar 2024</h5>
+                              <h5 class="item-period">Jul 2022 - May 2023</h5>
                               <span class="item-company"></span>
                             </div>
                             <div class="divider"></div>
@@ -603,7 +603,7 @@
                           </div>
                           <div class="timeline-item clearfix">
                             <div class="left-part">
-                              <h5 class="item-period">Mar 2020 - Aug 2021</h5>
+                              <h5 class="item-period">Mar 2020 - Aug 2023</h5>
                               <span class="item-company"></span>
                             </div>
                             <div class="divider"></div>
@@ -803,7 +803,7 @@
                                 target="_blank"
                               ></a>
                             </div>
-                            <h4 class="name">Scaneating</h4>
+                            <h4 class="name">Cholozai</h4>
                           </figure>
                           <figure
                             class="item lbaudio"
@@ -1040,7 +1040,7 @@
                       <div class="col-inner bs-30">
                         <div class="lm-info-block gray-default">
                           <i class="lnr lnr-phone-handset"></i>
-                          <h4>+64 2829 3635</h4>
+                          <h4>+8801728-293635</h4>
                           <span class="lm-info-block-value"></span>
                           <span class="lm-info-block-text"></span>
                         </div>
@@ -1050,7 +1050,7 @@
                       <div class="col-inner bs-30">
                         <div class="lm-info-block gray-default">
                           <i class="lnr lnr-map-marker"></i>
-                          <h4>Auckland, New Zealand</h4>
+                          <h4>Dhaka, Bangladesh</h4>
                           <span class="lm-info-block-value"></span>
                           <span class="lm-info-block-text"></span>
                         </div>
@@ -1189,25 +1189,24 @@
     <script src="js/lottie.js"></script>
     <script>
       window.onload = function () {
+        function calculateAge() {
+          const birthday = new Date("1995-08-30");
+          const now = new Date();
+
+          let age = now.getFullYear() - birthday.getFullYear();
+
+          if (
+            now.getMonth() < birthday.getMonth() ||
+            (now.getMonth() === birthday.getMonth() &&
+              now.getDate() < birthday.getDate())
+          ) {
+            age--;
+          }
+
+          document.getElementById("age").innerText = age;
+        }
         calculateAge();
       };
-      function calculateAge() {
-        const birthday = new Date("1995-08-30");
-        console.log(birthday);
-        const now = new Date();
-
-        let age = now.getFullYear() - birthday.getFullYear();
-
-        if (
-          now.getMonth() < birthday.getMonth() ||
-          (now.getMonth() === birthday.getMonth() &&
-            now.getDate() < birthday.getDate())
-        ) {
-          age--;
-        }
-
-        document.getElementById("age").innerText = age;
-      }
     </script>
   </body>
 </html>
