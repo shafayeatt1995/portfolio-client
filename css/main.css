@@ -768,9 +768,8 @@ blockquote {
 }
 
 .my-photo img {
-  height: 175px;
-  max-height: 175px;
-  width: 175px;
+  height: 215px;
+  max-height: 215px;
   border-radius: 15px;
 }
 
@@ -871,27 +870,29 @@ blockquote {
 }
 
 .header .social-links {
-  display: inline-block;
+  display: flex;
   position: relative;
   width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  justify-content: center;
 }
 
 .header .social-links a {
-  display: inline-block;
+  display: flex;
   margin: 0 2px;
   width: 28px;
   height: 28px;
   color: #888;
   background-color: #eee;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .header .social-links a:hover {
-  background-color: #0099e5;
+  background-color: #ddd;
 }
 
 .header .social-links a i {
@@ -899,9 +900,6 @@ blockquote {
   line-height: 28px;
 }
 
-.header .social-links a:hover i {
-  color: #fff;
-}
 
 .menu-toggle {
   display: block;
@@ -3383,42 +3381,27 @@ blockquote p {
   width: 100%;
   align-items: center;
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex-pack: center;
   justify-content: center;
-  flex-direction: column;
   height: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
   align-content: stretch;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: center;
 }
 
 .start-page .vcentered .row {
   width: 100%;
+}
+
+.project-name {
+  color: #333;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
 }
